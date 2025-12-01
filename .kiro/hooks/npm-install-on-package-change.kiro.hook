@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Auto npm install",
+  "description": "Automatically runs 'npm install' whenever package.json is changed to ensure dependencies are up to date",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "package.json"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npm install"
+  }
+}

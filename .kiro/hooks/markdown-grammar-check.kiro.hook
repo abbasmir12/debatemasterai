@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Markdown Grammar & Spelling Fixer",
+  "description": "Automatically reviews and fixes grammar or spelling errors in README.md and all .md files in .kiro/specs/ whenever they are edited",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "README.md",
+      ".kiro/specs/*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the edited markdown file for grammar and spelling errors. Fix any errors you find and provide the corrected version. Focus on:\n- Spelling mistakes\n- Grammar issues (subject-verb agreement, tense consistency, etc.)\n- Punctuation errors\n- Capitalization issues\nPreserve the original markdown formatting, structure, and technical content. Only fix language errors without changing the meaning or technical accuracy."
+  }
+}

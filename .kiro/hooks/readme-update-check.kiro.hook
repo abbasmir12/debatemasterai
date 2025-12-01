@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "name": "README Update Checker",
+  "description": "Monitors file changes in the project and prompts to check if README.md needs to be updated to reflect the changes made",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/**/*",
+      "package.json",
+      "vite.config.ts",
+      "tsconfig.json",
+      "tailwind.config.js",
+      "index.html"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A file has been modified in the project. Please review the changes and determine if the README.md needs to be updated to reflect these changes. Consider if the changes affect:\n- Project features or functionality\n- Installation or setup instructions\n- Technology stack or dependencies\n- Usage instructions or examples\n- Configuration requirements\n- Project structure or architecture\n\nIf updates are needed, suggest specific sections of the README.md that should be modified and what information should be added or changed."
+  }
+}

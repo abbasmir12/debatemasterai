@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "name": "Lint on Save",
+  "description": "Automatically runs npm run lint -- --fix on files when they are saved to fix linting issues",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "*.ts",
+      "*.tsx",
+      "*.js",
+      "*.jsx"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npm run lint -- --fix"
+  }
+}

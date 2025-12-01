@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Unused Imports Scanner",
+  "description": "Scans all TypeScript files for unused imports and suggests cleanup to keep the codebase clean and maintainable",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Scan all TypeScript files (*.ts, *.tsx) in the src/ directory and identify any unused imports. For each file with unused imports, provide:\n1. The file path\n2. The specific import statements that are unused\n3. A suggested cleanup action (remove the unused import or the entire import line if all imports from that module are unused)\n\nAnalyze the actual usage of imported items in the code to determine if they are truly unused. Consider:\n- Direct usage in the code\n- Re-exports\n- Type-only imports that may be used in type annotations\n- Side-effect imports (imports without any named imports)\n\nProvide a summary report with actionable recommendations for cleaning up the codebase."
+  }
+}

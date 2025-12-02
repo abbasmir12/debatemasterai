@@ -1,6 +1,6 @@
 # DebateMaster AI
 
-A real-time AI debate coaching application powered by Google's Gemini Live API that helps users practice and improve their debating skills through immersive voice interaction with an AI opponent.
+A real-time AI debate coaching application powered by Amazon Kiro IDE & Google's Gemini Live API that helps users practice and improve their debating skills through immersive voice interaction with an AI opponent.
 
 ## Table of Contents
 

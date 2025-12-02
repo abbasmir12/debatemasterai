@@ -20,7 +20,7 @@ A real-time AI debate coaching application powered by Amazon Kiro IDE & Google's
 
 DebateMaster AI transforms debate practice into an engaging, AI-powered experience. Users engage in real-time voice debates with an intelligent AI opponent that adapts to their style, provides immediate feedback, and tracks performance over time. The application features two distinct debate modes (Coach and Fierce), comprehensive analytics, persona discovery, and an immersive visual interface with WebGL voice visualization.
 
-Built for the AWS Global Vibe: AI Coding Hackathon 2025, this project demonstrates the power of combining cutting-edge AI APIs with modern web technologies to create educational tools that make skill development both effective and enjoyable.
+This project demonstrates the power of combining cutting-edge AI APIs with modern web technologies to create educational tools that make skill development both effective and enjoyable.
 
 ## Key Features
 
@@ -492,17 +492,6 @@ All data is stored locally in browser localStorage:
 - Session history with full metadata
 - API configuration and preferences
 - No server-side storage required
-
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch
-3. Follow the existing code style and structure
-4. Add specs for new features in `.kiro/specs/`
-5. Test thoroughly
-6. Submit a pull request
 
 ## License
 

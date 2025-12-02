@@ -13,7 +13,6 @@ A real-time AI debate coaching application powered by Amazon Kiro IDE & Google's
 - [Usage Guide](#usage-guide)
 - [Development Workflow](#development-workflow)
 - [Performance & Analytics](#performance--analytics)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
